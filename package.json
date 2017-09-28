@@ -37,6 +37,11 @@
           ],
           "description": "include files to search for"
         },
+        "bitk_node_require.use_semicolon": {
+          "type": "boolean",
+          "default": true,
+          "description": "Adds a semicolon at the end of the require statement"
+        },
         "bitk_node_require.exclude": {
           "type": "array",
           "default": [

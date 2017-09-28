@@ -147,9 +147,13 @@ function activate(context) {
                             let script;
 
                             if (requireMethod === constants.TYPE_REQUIRE) {
-                                script = `const ${importName} = require('${relativePath}');`;
+                                script = `const ${importName} = require('${relativePath}')`;
                             } else {
-                                script = `import ${importName} from '${relativePath}';`;
+                                script = `import ${importName} from '${relativePath}'`;
+                            }
+                        
+                            if (config.use_semicolon) {
+                                return `${script};`;
                             }
 
                             return script;
