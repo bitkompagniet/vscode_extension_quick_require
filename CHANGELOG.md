@@ -1,3 +1,7 @@
+# 0.7.1
+
+- Deprecation warning with reference to tgreen7's fork.
+
 # 0.7.0
 
 - Absolute imports are inserted before relative imports (by **@nickyhajal**).
